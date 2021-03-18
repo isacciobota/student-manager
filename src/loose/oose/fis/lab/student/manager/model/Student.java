@@ -7,22 +7,25 @@ public class Student {
     private double meanGrade;
 
     public Student(String firstName, String lastName, int age, double meanGrade) {
-        //assignments
+        firstName=firstName;
+        lastName=lastName;
+        age=age;
+        meanGrade=meanGrade;
     }
 
     @Override
     public String toString() {
-        //toString generated implementation
+        return firstName+lastName;//toString generated implementation
     }
 
     @Override
     public boolean equals(Object o) {
-        //equals generated implementation
+        return true;          ///eroare
     }
 
     @Override
     public int hashCode() {
-        //hashCode generated implementation
+        return 1234;//hashCode generated implementation
     }
 
     //generated getters and setters for all fields
